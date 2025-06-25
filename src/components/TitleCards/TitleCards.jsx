@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from 'react'
 import "./TitleCards.css"
 import card_data from "../../assets/cards/Cards_data"
 import {Link} from 'react-router-dom'
+
+
 const TitleCards = ({title,category}) => {
   console.log("category",category);
-
-
   const cardsRef = useRef()
   const [apiData, setapiData] = useState([])
   const options = {
